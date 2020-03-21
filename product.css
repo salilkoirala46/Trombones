@@ -1,0 +1,186 @@
+body{
+    background-color:#EEEEEE;
+}
+#header-img{
+  height:40px;
+  width:270px;
+}
+#header{
+  width:95%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  overflow: hidden;
+  background-color:#EEEEEE;
+  position: fixed;
+  top:0px;
+  padding-top:15px;
+  z-index:1;
+}
+
+#nav-bar .nav-link{
+    padding-left:80px;
+    font-size:17px;
+    height:30px;
+    border:none;
+    background-color:#EEEEEE;
+    text-decoration: none;
+    color:black;
+}
+#subscription{
+   margin-top:70px;
+  text-align:center;
+    z-index:0;
+}
+
+#submit{
+  background-color:#F1C40F;
+  border:none;
+  margin:15px;
+  height:30px;
+  width:130px;
+  font-weight:800;
+   font-size:15px;
+}
+
+#form input[type="email"]{
+    width:200px;
+    height:30px;
+}
+
+#features{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin:40px 0px;
+    z-index: 0;
+}
+#features .feature{
+    margin:0 auto;
+    width:70%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.feature #description{
+    width:80%;
+    opacity:0.8;
+}
+.feature .fa {
+    font-size:50px;
+    color:#FF8C00;
+}
+
+
+#youtube_videos{
+    margin:0 auto;
+    max-width:500px;
+    position: relative;
+     padding-top: 30px;
+     height: 400px;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+     border: solid black 1px;
+    z-index:0;
+}
+#video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+}
+
+
+
+#pricing{
+  margin:0 auto;
+  width:80%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  z-index:0;
+}
+#pricing h3{
+  margin:0px;
+  background-color:#DDDDDD;
+  padding:10px;
+  font-weight:400;
+}
+#pricing .plan{
+  border:1px solid black;
+  text-align:center;
+  width:30%;
+  font-size:20px;
+  border-radius:3px;
+  padding-bottom:10px;
+}
+#pricing .plan .select{
+  display: inline-block;
+  background-color:#F1C40F;
+  border:none;
+  line-height:30px;
+  width:120px;
+  font-size:15px;
+  text-decoration: none;
+  color:black;
+}
+.plan h4{
+  font-size:25px;
+  margin:20px;
+}
+.plan p{
+  font-size:18px;
+}
+
+#footer{
+    margin:0 auto;
+    width:80%;
+    height:80px;
+    background-color:#DDDDDD;
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-end;
+    z-index:0;
+}
+#footer a{
+    text-decoration: none;
+    color:black;
+    padding:0px 20px 10px 0px;
+}
+#footer .copyright{
+    opacity:0.6;
+    padding:0px 20px 10px 0px;
+}
+@media only screen and (max-width: 800px){
+  #header{
+    display:block;
+  }
+    .feature .fa {
+    display:none;
+}
+    #nav-bar .nav-link{
+        padding-left: 0px;
+    }
+    #nav-bar a{
+        display: block;
+        text-align: center;
+    }
+    #subscription{
+        margin-top:170px;
+    }
+    #pricing{
+      display:block;
+    }
+    #pricing .plan{
+      width:90%;
+        margin-bottom:20px;
+    }
+    #footer{
+        display: block;
+        text-align: center;
+    }
+}
